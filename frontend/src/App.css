@@ -492,6 +492,7 @@ body {
   border-radius: 5px;
   border: 2px solid #a06e40;
   position: relative;
+  pointer-events: none;
 }
 
 .human-eyes {
@@ -501,6 +502,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 0 10px;
+  pointer-events: none;
 }
 
 .eye {
@@ -513,6 +515,7 @@ body {
   align-items: center;
   border: 1px solid #000;
   position: relative;
+  pointer-events: none;
 }
 
 .pupil {
@@ -521,6 +524,8 @@ body {
   background: black;
   border-radius: 50%;
   position: absolute;
+  pointer-events: none;
+  will-change: transform;
 }
 
 .auto-click-status {
