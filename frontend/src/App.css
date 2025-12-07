@@ -450,6 +450,8 @@ body {
   display: inline-block;
   margin-top: 20px;
   user-select: none;
+  pointer-events: auto;
+  z-index: 5;
 }
 
 .name-tag {
@@ -463,6 +465,7 @@ body {
   font-weight: 700;
   font-size: 0.9rem;
   color: #f7b731;
+  pointer-events: none;
 }
 
 .character {
@@ -474,10 +477,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.1s;
+  will-change: transform;
+  pointer-events: none;
 }
 
-.character:active {
+.character-container:active .character {
   transform: scale(0.95);
 }
 
