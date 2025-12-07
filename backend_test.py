@@ -201,12 +201,31 @@ class YigitGameAPITester:
 
     def test_duplicate_registration(self):
         """Test registering with existing email"""
-        # Use the same email from previous registration
-        timestamp = datetime.now().strftime('%H%M%S')
-        duplicate_data = {
-            "username": f"duplicate_{timestamp}",
-            "email": f"test_{timestamp}@example.com",  # Same email as first registration
+        # First register a user
+        timestamp = datetime.now().strftime('%H%M%S%f')  # More unique timestamp
+        first_user = {
+            "username": f"firstuser_{timestamp}",
+            "email": f"duplicate_test_{timestamp}@example.com",
             "password": "TestPass123!"
+        }
+        
+        # Register first user
+        first_success, _ = self.run_test(
+            "First User Registration", 
+            "POST", 
+            "auth/register", 
+            200, 
+            first_user
+        )
+        
+        if not first_success:
+            return False
+        
+        # Try to register with same email but different username
+        duplicate_data = {
+            "username": f"seconduser_{timestamp}",
+            "email": first_user["email"],  # Same email
+            "password": "DifferentPass123!"
         }
         
         return self.run_test("Duplicate Email Registration", "POST", "auth/register", 400, duplicate_data)[0]
