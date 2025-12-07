@@ -1,82 +1,88 @@
 {
   "summary": {
-    "total_tests": 12,
-    "passed_tests": 10,
-    "failed_tests": 2,
-    "success_rate": 83.33333333333334
+    "total_tests": 13,
+    "passed_tests": 12,
+    "failed_tests": 1,
+    "success_rate": 92.3076923076923
   },
   "detailed_results": [
     {
       "test_name": "Root API Endpoint",
       "success": true,
       "details": "Status: 200, Response: {\n  \"message\": \"Yi\\u011fit'e Vurma Oyunu API\"\n}...",
-      "timestamp": "2025-12-07T14:41:31.255963"
+      "timestamp": "2025-12-07T14:41:54.307720"
     },
     {
       "test_name": "User Registration",
       "success": true,
-      "details": "Status: 200, Response: {\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwOGE0MjhmMC1kYTYzLTQyNmEtOTVhMy00NWM2NzJmMmE2NDMiLCJleHAiOjE3Njc3MTA0OTF9.rpqarOSwRDiStfAAaK-5NqREUcVKeLPX8ek_C4vN24A\",\n  \"user\": {\n    \"i...",
-      "timestamp": "2025-12-07T14:41:31.526984"
+      "details": "Status: 200, Response: {\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyNWVhMjFiZS03MGVmLTQ3YjktYjExZS1iNjkxYWUwOWQ5YzkiLCJleHAiOjE3Njc3MTA1MTR9.WiYJ7i3Q7Z-g306qWhe1n7bVpXsTSgI3V1ZXnSWFcg8\",\n  \"user\": {\n    \"i...",
+      "timestamp": "2025-12-07T14:41:54.610270"
     },
     {
       "test_name": "Pre-Login Registration",
       "success": true,
-      "details": "Status: 200, Response: {\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlOTA1NDAzZi1hZmRiLTQzYzctYTk4NS1hNzgzZWFjYTYwZWUiLCJleHAiOjE3Njc3MTA0OTF9.iGKC6BYQPAArvLdPPm0R7MMPRcvGGQR1pPusbnveKB0\",\n  \"user\": {\n    \"i...",
-      "timestamp": "2025-12-07T14:41:31.791293"
+      "details": "Status: 200, Response: {\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkY2EwNTAwNC1kMWM3LTQxZTMtYTNiZS1lYjE2NzE5OWI0YTYiLCJleHAiOjE3Njc3MTA1MTR9.aooSqkmKZIsJhC7XVNaqj8PyGLH15JeXVSVlt8UukBc\",\n  \"user\": {\n    \"i...",
+      "timestamp": "2025-12-07T14:41:54.878140"
     },
     {
       "test_name": "User Login",
       "success": true,
-      "details": "Status: 200, Response: {\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlOTA1NDAzZi1hZmRiLTQzYzctYTk4NS1hNzgzZWFjYTYwZWUiLCJleHAiOjE3Njc3MTA0OTJ9.ZxRVooccPI_n8coOwvSRc7xOD5QKodXJ8EeGlYVRbKo\",\n  \"user\": {\n    \"i...",
-      "timestamp": "2025-12-07T14:41:32.052582"
+      "details": "Status: 200, Response: {\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkY2EwNTAwNC1kMWM3LTQxZTMtYTNiZS1lYjE2NzE5OWI0YTYiLCJleHAiOjE3Njc3MTA1MTV9.KhuDDw20rhkjwZqsJs3fV_o-5vlLZpNpbqVrAsZK5uk\",\n  \"user\": {\n    \"i...",
+      "timestamp": "2025-12-07T14:41:55.138373"
     },
     {
       "test_name": "Get Current User",
       "success": true,
-      "details": "Status: 200, Response: {\n  \"id\": \"e905403f-afdb-43c7-a985-a783eaca60ee\",\n  \"username\": \"logintest_144131\",\n  \"email\": \"logintest_144131@example.com\",\n  \"total_score\": 0,\n  \"created_at\": \"2025-12-07T14:41:31.786942+00:00\"\n}...",
-      "timestamp": "2025-12-07T14:41:32.094755"
+      "details": "Status: 200, Response: {\n  \"id\": \"dca05004-d1c7-41e3-a3be-eb167199b4a6\",\n  \"username\": \"logintest_144154\",\n  \"email\": \"logintest_144154@example.com\",\n  \"total_score\": 0,\n  \"created_at\": \"2025-12-07T14:41:54.873121+00:00\"\n}...",
+      "timestamp": "2025-12-07T14:41:55.177867"
     },
     {
       "test_name": "Save Game",
       "success": true,
-      "details": "Status: 200, Response: {\n  \"message\": \"Oyun kaydedildi\",\n  \"game_id\": \"3c5dc55d-e3f3-4518-bacb-957ae412dfb9\"\n}...",
-      "timestamp": "2025-12-07T14:41:32.203359"
+      "details": "Status: 200, Response: {\n  \"message\": \"Oyun kaydedildi\",\n  \"game_id\": \"22e86490-2da4-4562-afa0-e6c51a54c13c\"\n}...",
+      "timestamp": "2025-12-07T14:41:55.220773"
     },
     {
       "test_name": "Get Game Records",
       "success": true,
-      "details": "Status: 200, Response: [\n  {\n    \"id\": \"3c5dc55d-e3f3-4518-bacb-957ae412dfb9\",\n    \"user_id\": \"e905403f-afdb-43c7-a985-a783eaca60ee\",\n    \"mode\": \"Tek Ki\\u015filik - Kolay\",\n    \"score\": 25,\n    \"duration\": 15,\n    \"date\": ...",
-      "timestamp": "2025-12-07T14:41:32.245118"
+      "details": "Status: 200, Response: [\n  {\n    \"id\": \"22e86490-2da4-4562-afa0-e6c51a54c13c\",\n    \"user_id\": \"dca05004-d1c7-41e3-a3be-eb167199b4a6\",\n    \"mode\": \"Tek Ki\\u015filik - Kolay\",\n    \"score\": 25,\n    \"duration\": 15,\n    \"date\": ...",
+      "timestamp": "2025-12-07T14:41:55.260926"
     },
     {
       "test_name": "Get Leaderboard",
       "success": true,
-      "details": "Status: 200, Response: [\n  {\n    \"username\": \"logintest_144131\",\n    \"total_score\": 25,\n    \"best_score\": 25,\n    \"games_played\": 1\n  },\n  {\n    \"username\": \"halilkaanay6\",\n    \"total_score\": 0,\n    \"best_score\": 0,\n    \"ga...",
-      "timestamp": "2025-12-07T14:41:32.289519"
+      "details": "Status: 200, Response: [\n  {\n    \"username\": \"logintest_144131\",\n    \"total_score\": 25,\n    \"best_score\": 25,\n    \"games_played\": 1\n  },\n  {\n    \"username\": \"logintest_144154\",\n    \"total_score\": 25,\n    \"best_score\": 25,\n ...",
+      "timestamp": "2025-12-07T14:41:55.302709"
     },
     {
       "test_name": "Get User Achievements",
       "success": true,
-      "details": "Status: 200, Response: [\n  {\n    \"id\": \"46ab24fe-18c9-4a0e-a527-c6059c670783\",\n    \"user_id\": \"e905403f-afdb-43c7-a985-a783eaca60ee\",\n    \"achievement_name\": \"\\u0130lk Vuru\\u015f\",\n    \"unlocked_at\": \"2025-12-07T14:41:32.13...",
-      "timestamp": "2025-12-07T14:41:32.331378"
+      "details": "Status: 200, Response: [\n  {\n    \"id\": \"1d4e139f-9e9e-4258-bf4e-e736ac200077\",\n    \"user_id\": \"dca05004-d1c7-41e3-a3be-eb167199b4a6\",\n    \"achievement_name\": \"\\u0130lk Vuru\\u015f\",\n    \"unlocked_at\": \"2025-12-07T14:41:55.21...",
+      "timestamp": "2025-12-07T14:41:55.540760"
     },
     {
       "test_name": "Invalid Login",
       "success": true,
       "details": "Status: 401, Response: {\n  \"detail\": \"Email veya \\u015fifre hatal\\u0131\"\n}...",
-      "timestamp": "2025-12-07T14:41:32.368750"
+      "timestamp": "2025-12-07T14:41:55.580499"
+    },
+    {
+      "test_name": "First User Registration",
+      "success": true,
+      "details": "Status: 200, Response: {\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNzcwNDg1Yi0wYTgwLTQyMTAtOWQ3Ny01NmYzZWYwZmE3NWUiLCJleHAiOjE3Njc3MTA1MTV9.yGIQ4BYTJt16O3mZqHkOpw1FboQjffRfVrey7RGE17M\",\n  \"user\": {\n    \"i...",
+      "timestamp": "2025-12-07T14:41:55.841164"
     },
     {
       "test_name": "Duplicate Email Registration",
-      "success": false,
-      "details": "Status: 200, Error: {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlYTRmOGE4YS1kM2RkLTRhZTMtYjRlOS04OTUxMDcwM2ExYjUiLCJleHAiOjE3Njc3MTA0OTJ9.xk3VcujsOXs0WMiRR7iVQ-ivL_VKBTG4xdcG9k87ffQ', 'user': {'id': 'ea4f8a8a-d3dd-4ae3-b4e9-89510703a1b5', 'username': 'duplicate_144132', 'email': 'test_144132@example.com', 'total_score': 0}}",
-      "timestamp": "2025-12-07T14:41:32.631303"
+      "success": true,
+      "details": "Status: 400, Response: {\n  \"detail\": \"Email zaten kay\\u0131tl\\u0131\"\n}...",
+      "timestamp": "2025-12-07T14:41:55.880131"
     },
     {
       "test_name": "Unauthorized Access",
       "success": false,
       "details": "Status: 403, Error: {'detail': 'Not authenticated'}",
-      "timestamp": "2025-12-07T14:41:32.668655"
+      "timestamp": "2025-12-07T14:41:55.917114"
     }
   ]
 }
